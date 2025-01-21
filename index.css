@@ -68,15 +68,15 @@ main {
 .temperature {
   font-size: 85px;
   font-weight: 600;
+  line-height: 88px;
+  margin-left: 10px;
 }
 .icon {
-  font-size: 45px;
-  margin-top: 20px;
-  margin-left: 5px;
+  width: 100%;
 }
 .unit {
-  font-size: 20px;
-  margin-top: 18px;
+  font-size: 25px;
+  margin-top: 5px;
   font-weight: 500;
 }
 footer {
