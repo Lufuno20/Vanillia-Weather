@@ -51,7 +51,32 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastWeather = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="forecast-day">
+            <div class="forecast-date">${day}</div>
+            <div class="forecast-icon">☀️</div>
+            <div class="forecast-tempurates">
+              <div class="forecast-temp">
+              <strong>21°C</strong></div>
+              <div class="forecast-temp">17°C</div>
+            </div>
+          </div>`;
+  });
+
+  forecastWeather.innerHTML = forecastHTML;
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", InputSerach);
 
 searchCity("Johannesburg");
+displayForecast();
