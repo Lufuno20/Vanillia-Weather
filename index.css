@@ -92,8 +92,10 @@ main {
   font-weight: 700;
 }
 .forecast-icon {
-  font-size: 38px;
+  width: 80%;
   text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 .forecast-tempurates {
   text-align: center;
@@ -104,6 +106,9 @@ main {
 }
 .forecast-temp {
   padding: 0 10px;
+}
+.forecast-temp strong {
+  font-weight: 700;
 }
 footer {
   padding: 30px 0 0 0;
